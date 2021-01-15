@@ -2,9 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link as ScrollLink } from 'react-scroll';
-import Typical from 'react-typical';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 import content from '../content';
+import FpsButton from "./buttons/FpsButton";
+import WhyyyButton from "./buttons/WhyyyButton";
 
 export default function Header() {
   const [animated, setAnimated] = useState(false);
@@ -45,17 +52,8 @@ export default function Header() {
             {content.header.text[2]}{' '}
           </h1>
 
-          <ScrollLink to="stack" smooth={true}>
-            <button className="button-fps px-10 py-3 text-xl m-1 uppercase mt-10 rounded-3xl transition duration-500 transform hover:-translate-y-1 hover:scale-110">
-              <strong>{content.header.fpsText}</strong>
-            </button>
-          </ScrollLink>
-
-          <ScrollLink to="stack" smooth={true}>
-            <button className="button-whyyy px-10 py-3 text-xl m-3 uppercase mt-10 rounded-3xl transition duration-500 transform hover:-translate-y-1 hover:scale-110">
-              <strong>{content.header.whyyText}</strong>
-            </button>
-          </ScrollLink>
+          <FpsButton />
+          <WhyyyButton />
         </div>
       </div>
     </div>
