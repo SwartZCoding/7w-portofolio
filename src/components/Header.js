@@ -19,8 +19,8 @@ export default function Header() {
         background: '#091c29',
       }}
     >
-      <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-        <div className="w-full md:w-2/5">
+      <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between ">
+        <div className="w-full md:w-2/5 animate-float">
           <LazyLoadImage
             src={content.header.img}
             effect="blur"
@@ -43,15 +43,17 @@ export default function Header() {
             }  transform transition duration-2000 ease-in-out font-bold text-2xl text-gray-500`}
           >
             {content.header.text[2]}{' '}
-            <Typical
-              steps={content.header.typical}
-              loop={Infinity}
-              className="inline-block"
-            />
           </h1>
+
           <ScrollLink to="stack" smooth={true}>
-            <button className=" animate-float bg-indigo-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg">
-              {content.header.btnText}
+            <button className="button-fps px-10 py-3 text-xl m-1 uppercase mt-10 rounded-3xl transition duration-500 transform hover:-translate-y-1 hover:scale-110">
+              <strong>{content.header.fpsText}</strong>
+            </button>
+          </ScrollLink>
+
+          <ScrollLink to="stack" smooth={true}>
+            <button className="button-whyyy px-10 py-3 text-xl m-3 uppercase mt-10 rounded-3xl transition duration-500 transform hover:-translate-y-1 hover:scale-110">
+              <strong>{content.header.whyyText}</strong>
             </button>
           </ScrollLink>
         </div>

@@ -7,9 +7,8 @@ export default {
     ],
   },
   header: {
-    img:
-      'https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80',
-    text: ['Hi!', "It's me Random.", 'I am '],
+    img: process.env.PUBLIC_URL + '/assets/logo.png',
+    text: ['Bienvenue sur le site', "de la 7WCréa."],
     typical: [
       'web developer. 🖥',
       2000,
@@ -18,7 +17,9 @@ export default {
       'Mobile Developer',
       2000,
     ],
-    btnText: 'Discover More',
+    discordText: 'Discord',
+    fpsText: 'Découvre 7FPS',
+    whyyText: 'Découvre Whyyy',
   },
 
   stack: {
