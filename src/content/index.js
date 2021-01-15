@@ -9,17 +9,20 @@ export default {
   header: {
     img: process.env.PUBLIC_URL + '/assets/logo.png',
     text: ['Bienvenue sur le site', "de la 7WCréa."],
-    typical: [
-      'web developer. 🖥',
-      2000,
-      'Youtuber. 📹',
-      2000,
-      'Mobile Developer',
-      2000,
+    mans: [
+      {
+        img: process.env.PUBLIC_URL + '/assets/owners/7fps.png',
+        alt: '7fps',
+      },
+      {
+        img: process.env.PUBLIC_URL + '/assets/owners/whyyy.png',
+        alt: 'whyyy',
+      },
     ],
     discordText: 'Discord',
     fpsText: 'Découvre 7FPS',
     whyyText: 'Découvre Whyyy',
+    skillsText: 'Nos compétences',
   },
 
   stack: {

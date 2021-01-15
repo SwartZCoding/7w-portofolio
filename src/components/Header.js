@@ -12,6 +12,8 @@ import {
 import content from '../content';
 import FpsButton from "./buttons/FpsButton";
 import WhyyyButton from "./buttons/WhyyyButton";
+import SkillsButton from "./buttons/SkillsButton";
+import Bubble from "./Bubble";
 
 export default function Header() {
   const [animated, setAnimated] = useState(false);
@@ -54,6 +56,9 @@ export default function Header() {
 
           <FpsButton />
           <WhyyyButton />
+          <SkillsButton />
+
+          <Bubble />
         </div>
       </div>
     </div>
