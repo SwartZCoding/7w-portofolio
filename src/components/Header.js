@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { Link as ScrollLink } from 'react-scroll';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 import content from '../content';
 import FpsButton from "./buttons/FpsButton";
