@@ -4,11 +4,7 @@ import DiscordButton from "./buttons/DiscordButton";
 
 export default function Navigation() {
   return (
-    <div
-      style={{
-        background: '#091c29',
-      }}
-    >
+    <div className="navbar-color">
       <div className="flex items-center justify-between w-10/12 mx-auto py-3 text-white font-dosis">
         <h1 className="text-3xl font-bold transition duration-500 transform hover:-translate-y-1 hover:scale-110">
           {content.nav.logo}{' '}

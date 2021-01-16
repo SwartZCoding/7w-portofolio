@@ -3,11 +3,7 @@ import content from '../content';
 
 export default function Footer() {
     return (
-        <div
-            style={{
-                background: '#091c29',
-            }}
-        >
+        <div className="navbar-color">
             <div className="flex py-3 text-white font-dosis">
                 <h1 className="text-3xl font-bold m-auto transition duration-500 transform hover:-translate-y-1 hover:scale-110">
                     {content.nav.logo}{' '}

@@ -6,7 +6,7 @@ import content from '../content';
 import FpsButton from "./buttons/FpsButton";
 import WhyyyButton from "./buttons/WhyyyButton";
 import SkillsButton from "./buttons/SkillsButton";
-import Bubble from "./Bubble";
+import Bubble from "./ui/Bubble";
 
 export default function Header() {
   const [animated, setAnimated] = useState(false);
